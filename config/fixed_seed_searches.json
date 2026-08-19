@@ -1,0 +1,39 @@
+{
+  "deposit_version": "minor-revision-1",
+  "seeds": [11001, 22003, 33007],
+  "algorithm": "PIKAIA",
+  "controls": {
+    "population": 64,
+    "generations": 10,
+    "evaluations_per_run": 704,
+    "chromosome_decimal_digits": 3,
+    "crossover_probability": 0.85,
+    "initial_mutation_probability": 0.005,
+    "adaptive_mutation_probability_min": 0.0005,
+    "adaptive_mutation_probability_max": 0.25,
+    "replacement": "full_generational",
+    "elitism": true
+  },
+  "objective": "Q = 6*Qspec + Qimg_6p77 + Qimg_9p69",
+  "frequencies_GHz": [3.7540526, 6.7671876, 9.4078121, 9.6921873, 17.004688],
+  "target_flux_sfu": [702.738, 1981.226, 3536.809, 3575.750, 4491.146],
+  "fixed_parameters": {
+    "logT_K": 8.0,
+    "minimum_electron_energy_keV": 10.0,
+    "maximum_electron_energy_keV": 100000.0,
+    "pitch_angle_distribution": "isotropic"
+  },
+  "bounds": {
+    "ie": {"min": 0.20, "max": 2.50, "unit": "dimensionless", "definition": "longitudinal nonthermal-electron density shape parameter"},
+    "delta": {"min": 2.00, "max": 6.00, "unit": "dimensionless", "definition": "nonthermal electron energy power-law index"},
+    "logNe": {"min": 5.50, "max": 8.00, "unit": "log10(cm^-3)", "definition": "base-10 logarithm of nonthermal-electron number density"},
+    "logNp": {"min": 0.00, "max": 4.00, "unit": "log10(cm^-3)", "definition": "base-10 logarithm of ambient thermal-plasma number density"},
+    "As_pct": {"min": -80.0, "max": 80.0, "unit": "percent", "definition": "dipole/field-strength asymmetry"},
+    "Az_deg": {"min": -90.0, "max": 90.0, "unit": "degree", "definition": "loop azimuth"},
+    "R_Rsun": {"min": 0.002, "max": 0.030, "unit": "solar_radius", "definition": "loop cross-section radius"},
+    "FS_Rsun": {"min": 0.005, "max": 0.100, "unit": "solar_radius", "definition": "footpoint separation"},
+    "H_Rsun": {"min": 0.005, "max": 0.100, "unit": "solar_radius", "definition": "loop height"},
+    "incl_deg": {"min": -60.0, "max": 60.0, "unit": "degree", "definition": "loop inclination"},
+    "Bbase_G": {"min": 100.0, "max": 5000.0, "unit": "gauss", "definition": "loop-base magnetic-field normalization"}
+  }
+}

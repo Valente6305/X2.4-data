@@ -1,0 +1,7 @@
+Independent broad-bound five-frequency PIKAIA searches
+Seeds: 11001, 22003, 33007; population=64; generations=10
+Profile set definition: evaluated finite models with Q <= run Qmin + 2.
+This is an objective-profile diagnostic, not a confidence/credible interval.
+N profile models=279
+Bbase min/median/max=2138.4/3838.7/4941.2 G
+Bbase 16th/84th percentiles=3285.0/4745.2 G
